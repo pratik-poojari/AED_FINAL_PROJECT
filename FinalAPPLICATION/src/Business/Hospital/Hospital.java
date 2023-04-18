@@ -9,68 +9,68 @@ import java.util.ArrayList;
 
 /**
  *
- * @author HOME
+ * @author Pratik Poojari
  */
 public class Hospital {
     
-    private String HospitalName;
-    private int HospitalId;
-    private String HospitalAddress;
-    private String HospitalContactNo;
-    private String emailId;
+    private String Hospitalname;
+    private int Hospitalid;
+    private String Hospitaladdress;
+    private String Hospitalcontactno;
+    private String emailid;
     
     private static int count = 1;
     private ArrayList<Orders> PastOrderList;
 
     public String getHospitalName() {
-        return HospitalName;
+        return Hospitalname;
     }
 
     public void setHospitalName(String HospitalName) {
-        this.HospitalName = HospitalName;
+        this.Hospitalname = HospitalName;
     }
 
     public int getHospitalId() {
-        return HospitalId;
+        return Hospitalid;
     }
 
     public void setHospitalId(int HospitalId) {
-        this.HospitalId = HospitalId;
+        this.Hospitalid = HospitalId;
     }
 
     public String getHospitalAddress() {
-        return HospitalAddress;
+        return Hospitaladdress;
     }
 
     public void setHospitalAddress(String HospitalAddress) {
-        this.HospitalAddress = HospitalAddress;
+        this.Hospitaladdress = HospitalAddress;
     }
 
     public String getHospitalContactNo() {
-        return HospitalContactNo;
+        return Hospitalcontactno;
     }
 
     public void setHospitalContactNo(String HospitalContactNo) {
-        this.HospitalContactNo = HospitalContactNo;
+        this.Hospitalcontactno = HospitalContactNo;
     }
 
     public String getEmailId() {
-        return emailId;
+        return emailid;
     }
 
     public void setEmailId(String emailId) {
-        this.emailId = emailId;
+        this.emailid = emailId;
     }
     
       public Hospital() {
-        HospitalId = count;
+        Hospitalid = count;
         count++;
         this.PastOrderList = new ArrayList<Orders>();
     }
     
       @Override
     public String toString() {
-        return HospitalName;
+        return Hospitalname;
     }
     public ArrayList<Orders> getPastOrderList() {
         return PastOrderList;
