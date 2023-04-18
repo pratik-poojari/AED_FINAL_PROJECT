@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Raunak Singh Matharu
+ * @author Pratik Poojari
  */
 public class MedicineCatalog {
     private ArrayList<MedicineItem> medicineCatalogList;
