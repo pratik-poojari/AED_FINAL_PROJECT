@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Business.MedicineItems;
+package Business_Medicine;
 
 /**
  *
- * @author Raunak Singh Matharu
+ * @author Pratik Poojari
  */
 public class MedicineItem {
     private int id;
