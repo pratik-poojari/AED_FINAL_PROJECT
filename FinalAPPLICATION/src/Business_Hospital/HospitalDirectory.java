@@ -2,21 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Business.Hospital;
+package Business_Hospital;
 
 import java.util.ArrayList;
 
 /**
  *
- * @author HOME
+ * @author Pratik Poojari
  */
 public class HospitalDirectory {
     
-     private ArrayList<Hospital> HospitalList;
+     private ArrayList<Hospital> Hospitallist;
 
 
 public HospitalDirectory() {
-        HospitalList = new ArrayList();
+        Hospitallist = new ArrayList();
     }
 
 public Hospital createHospital(String name, String address, String phone){
@@ -25,16 +25,16 @@ public Hospital createHospital(String name, String address, String phone){
         h.setHospitalAddress(address);
         h.setHospitalContactNo(phone);
 
-        HospitalList.add(h);
+        Hospitallist.add(h);
         return h;
     }
 public ArrayList<Hospital> getHospitalList() {
-        return HospitalList;
+        return Hospitallist;
     }
 
 public Hospital findHospital(String name)
     {
-        for(Hospital h : HospitalList)
+        for(Hospital h : Hospitallist)
         {
             if(h.getHospitalName() == name)
             {
@@ -45,7 +45,7 @@ public Hospital findHospital(String name)
     }
  public void deleteHospital(Hospital hospital)
     {
-        HospitalList.remove(hospital);
+        Hospitallist.remove(hospital);
     }  
 
 

@@ -14,7 +14,7 @@ import Business.Supplier.SupplierDirectory;
 import Business.SupplierDeliveryMan.SupplierDeliveryManDirectory;
 import java.util.ArrayList;
 
-import Business.Hospital.HospitalDirectory;
+import Business_Hospital.HospitalDirectory;
 import Business.Role.HospitalAdminRole;
 
 /**
