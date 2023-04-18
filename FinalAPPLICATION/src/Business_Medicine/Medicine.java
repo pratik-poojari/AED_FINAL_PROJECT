@@ -2,17 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Business.MedicineItems;
+package Business_Medicine;
 import java.util.ArrayList;
 
 /**
  *
  * @author Pratik Poojari
  */
-public class MedicineCatalog {
+public class Medicine {
     private ArrayList<MedicineItem> medicineCatalogList;
     
-    public MedicineCatalog() {
+    public Medicine() {
         medicineCatalogList = new ArrayList();
     }
 
