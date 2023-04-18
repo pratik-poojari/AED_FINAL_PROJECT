@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Business;
-import Business.Employee.EmployeeDirectory;
+import Business_Employee.EmployeeDirectory;
 import Business.Role.Role;
 import Business.SupplierEmp.SupplierEmpDirectory;
 import Business.UserAccount.UserAccountDirectory;

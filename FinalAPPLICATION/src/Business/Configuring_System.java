@@ -4,7 +4,7 @@
  */
 package Business;
 
-import Business.Employee.Employee;
+import Business_Employee.Employee;
 import Business.Role.SystemAdminRole;
 import Business.SupplierEmp.SupplierEmp;
 import Business.UserAccount.UserAccount;
