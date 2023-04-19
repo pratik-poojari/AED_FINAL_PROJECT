@@ -4,8 +4,8 @@
  */
 package Business;
 
-import Business_Customer.CustomerDirectory;
-import Business_Delivery.DeliveryManDirectory;
+import Business.Customer.CustomerDirectory;
+import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Drugs.DrugsDirectory;
 import Business.Pharmacy.PharmacyDirectory;
 import Business.Role.Role;
@@ -14,17 +14,17 @@ import Business.Supplier.SupplierDirectory;
 import Business.SupplierDeliveryMan.SupplierDeliveryManDirectory;
 import java.util.ArrayList;
 
-import Business_Hospital.HospitalDirectory;
+import Business.Hospital.HospitalDirectory;
 import Business.Role.HospitalAdminRole;
 
 /**
  *
- * @author PratikPoojari
+ * @author Raunak Singh Matharu
  */
-public class Ecosystem_Area extends Organizations{
+public class EcoSystem extends Organization{
     
      
-    private static Ecosystem_Area business;
+    private static EcoSystem business;
     private PharmacyDirectory pharmacyDirectory;
     private CustomerDirectory customerDirectory;
     private DeliveryManDirectory deliveryManDirectory;
@@ -35,7 +35,7 @@ public class Ecosystem_Area extends Organizations{
     
     private DrugsDirectory drugsDirectory;
 
-    public Ecosystem_Area(PharmacyDirectory pharmacyDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory, SupplierDirectory supplierDirectory, SupplierDeliveryManDirectory supplierDeliveryManDirectory) {
+    public EcoSystem(PharmacyDirectory pharmacyDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory, SupplierDirectory supplierDirectory, SupplierDeliveryManDirectory supplierDeliveryManDirectory) {
 
         this.pharmacyDirectory = pharmacyDirectory;
         this.customerDirectory = customerDirectory;
@@ -51,9 +51,9 @@ public class Ecosystem_Area extends Organizations{
 
     
     
-    public static Ecosystem_Area getInstance(){
+    public static EcoSystem getInstance(){
         if(business==null){
-            business=new Ecosystem_Area();
+            business=new EcoSystem();
         }
         return business;
     }
@@ -64,9 +64,9 @@ public class Ecosystem_Area extends Organizations{
         roleList.add(new SystemAdminRole());
         return roleList;
     }
-    private Ecosystem_Area(){
+    private EcoSystem(){
         super(null);
-      
+       // networkList=new ArrayList<Network>();
         this.pharmacyDirectory = new PharmacyDirectory();
         this.customerDirectory = new CustomerDirectory();
         this.deliveryManDirectory = new DeliveryManDirectory();
@@ -99,7 +99,7 @@ public class Ecosystem_Area extends Organizations{
     }
     
     
-   
+    //
     public HospitalDirectory getHospitalDirectory() {
         return hospitalDirectory;
     }
@@ -108,7 +108,7 @@ public class Ecosystem_Area extends Organizations{
         return supplierDeliveryManDirectory;
     }
     public boolean checkIfUserIsUnique(String userName){
-       
+       //
        return false;
     }
 }
